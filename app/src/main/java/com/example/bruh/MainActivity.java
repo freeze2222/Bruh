@@ -1,10 +1,12 @@
 package com.example.bruh;
 
+import androidx.annotation.ContentView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -200,9 +202,11 @@ public class MainActivity extends AppCompatActivity{
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_two);
+                //setContentView(R.layout.activity_two);
             }
         });
+
+
 
                     }
                     public void check(MediaPlayer mp1, MediaPlayer mp2,MediaPlayer mp3,MediaPlayer mp4,MediaPlayer mp5,MediaPlayer mp6,MediaPlayer mp7,MediaPlayer mp8,MediaPlayer mp9,MediaPlayer mp10,MediaPlayer mp11,MediaPlayer mp12,MediaPlayer mp13,MediaPlayer mp14,MediaPlayer mp15){
