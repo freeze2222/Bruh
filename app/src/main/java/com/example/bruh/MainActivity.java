@@ -79,7 +79,6 @@ public class MainActivity extends AppCompatActivity{
 
             }
         });
-
         m2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -202,14 +201,24 @@ public class MainActivity extends AppCompatActivity{
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //setContentView(R.layout.activity_two);
+                setContentView(R.layout.activity_two);
+                Button previous=findViewById(R.id.previous);
+                previous.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        setContentView(R.layout.activity_main);
+                    }
+                });
             }
         });
 
 
 
                     }
-                    public void check(MediaPlayer mp1, MediaPlayer mp2,MediaPlayer mp3,MediaPlayer mp4,MediaPlayer mp5,MediaPlayer mp6,MediaPlayer mp7,MediaPlayer mp8,MediaPlayer mp9,MediaPlayer mp10,MediaPlayer mp11,MediaPlayer mp12,MediaPlayer mp13,MediaPlayer mp14,MediaPlayer mp15){
+                    public void check(MediaPlayer mp1, MediaPlayer mp2,MediaPlayer mp3,MediaPlayer mp4,
+                                      MediaPlayer mp5,MediaPlayer mp6,MediaPlayer mp7,MediaPlayer mp8,
+                                      MediaPlayer mp9,MediaPlayer mp10,MediaPlayer mp11,MediaPlayer mp12,
+                                      MediaPlayer mp13,MediaPlayer mp14,MediaPlayer mp15){
 
                             if (mp1.isPlaying()){
                                 mp1.pause();
@@ -225,7 +234,7 @@ public class MainActivity extends AppCompatActivity{
                             }
                             if (mp4.isPlaying()){
                                 mp4.pause();
-                                mp5.seekTo(0);
+                                mp4.seekTo(0);
                             }
                             if (mp5.isPlaying()){
                                 mp5.pause();
@@ -241,7 +250,7 @@ public class MainActivity extends AppCompatActivity{
                             }
                             if (mp8.isPlaying()){
                                 mp8.pause();
-                                mp9.seekTo(0);
+                                mp8.seekTo(0);
                             }
                             if (mp9.isPlaying()){
                                 mp9.pause();
@@ -271,7 +280,6 @@ public class MainActivity extends AppCompatActivity{
                                 mp15.pause();
                                 mp15.seekTo(0);
                             }
-
 
     }
 }
