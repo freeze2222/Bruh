@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Fragment2">
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="Стоп"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m12" />
+
+    <Button
+        android:id="@+id/m3"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Сало"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="@+id/m6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/m6"
+        app:layout_constraintTop_toBottomOf="@+id/m6" />
+
+    <Button
+        android:id="@+id/m2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Польская корова"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="@+id/m3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/m3"
+        app:layout_constraintTop_toBottomOf="@+id/m3" />
+
+    <Button
+        android:id="@+id/m1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Шизофрения"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/m4"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Ералаш"
+        app:layout_constraintEnd_toEndOf="@+id/m14"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/m14"
+        app:layout_constraintTop_toBottomOf="@+id/m14" />
+
+    <Button
+        android:id="@+id/m5"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Больно в ноге"
+        app:layout_constraintEnd_toEndOf="@+id/m7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/m7"
+        app:layout_constraintTop_toBottomOf="@+id/m7" />
+
+    <Button
+        android:id="@+id/m6"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Пожили и хватит"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toEndOf="@+id/m1"
+        app:layout_constraintTop_toTopOf="@+id/m1" />
+
+    <Button
+        android:id="@+id/m7"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="О привет"
+        app:layout_constraintEnd_toEndOf="@+id/m9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/m9"
+        app:layout_constraintTop_toBottomOf="@+id/m9" />
+
+    <Button
+        android:id="@+id/m8"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Навести суеты "
+        app:layout_constraintEnd_toEndOf="@+id/m2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/m2"
+        app:layout_constraintTop_toBottomOf="@+id/m2" />
+
+    <Button
+        android:id="@+id/m9"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Бенни Хилл"
+        app:layout_constraintEnd_toEndOf="@+id/m10"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/m10"
+        app:layout_constraintTop_toBottomOf="@+id/m10" />
+
+    <Button
+        android:id="@+id/m10"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Что"
+        app:layout_constraintEnd_toEndOf="@+id/m11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/m11"
+        app:layout_constraintTop_toBottomOf="@+id/m11" />
+
+    <Button
+        android:id="@+id/m11"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Но это не точно"
+        app:layout_constraintEnd_toEndOf="@+id/m15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/m15"
+        app:layout_constraintTop_toBottomOf="@+id/m15" />
+
+    <Button
+        android:id="@+id/m12"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="С Днём Рождения "
+        app:layout_constraintEnd_toEndOf="@+id/m5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/m5"
+        app:layout_constraintTop_toBottomOf="@+id/m5" />
+
+    <Button
+        android:id="@+id/m13"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Терминатор"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="@+id/m8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/m8"
+        app:layout_constraintTop_toBottomOf="@+id/m8" />
+
+    <Button
+        android:id="@+id/m14"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Форт"
+        app:layout_constraintEnd_toEndOf="@+id/m13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/m13"
+        app:layout_constraintTop_toBottomOf="@+id/m13" />
+
+    <Button
+        android:id="@+id/m15"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Казахстан"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="@+id/m1"
+        app:layout_constraintStart_toStartOf="@+id/m1"
+        app:layout_constraintTop_toBottomOf="@+id/m1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
