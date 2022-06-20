@@ -23,25 +23,33 @@ import java.lang.reflect.Field;
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.UserViewHolder> {
     static int counter=0;
     static Context context;
+    static Field[] fields = R.raw.class.getFields();
     static MediaPlayer mediaPlayer=new MediaPlayer();
     public ListAdapter(Context context){
         this.context=context;
-        Log.e("LOGS","CONSTRUCTOR MAIN");
     }
     @NonNull
     @Override
     public UserViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_track, parent, false);
-        Log.e("LOGS","ON CREATE VIEW HOLDER");
         return new UserViewHolder(view);
+    }
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return position;
     }
 
 
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
         try {
-            Log.e("LOGS","BIND");
             holder.bind();
+            counter++;
         }
         catch (Exception e){
             e.printStackTrace();
@@ -52,7 +60,6 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.UserViewHolder
 
     @Override
     public int getItemCount() {
-        Log.e("LOGS","GET ITEM COUNT");
         return R.raw.class.getFields().length;
     }
     static class UserViewHolder extends RecyclerView.ViewHolder {
@@ -65,14 +72,12 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.UserViewHolder
             play=itemView.findViewById(R.id.play);
             fav=itemView.findViewById(R.id.fav);
             nameView=itemView.findViewById(R.id.name);
-            Log.e("LOGS","CONSTRUCTOR");
         }
 
         public void bind() throws IllegalAccessException, IOException {
-            Log.e("LOGS","BINDING");
-            Field[] fields = R.raw.class.getFields();
-                String name = fields[counter].getName();
                 @RawRes int rawId = (Integer)fields[counter].get(null);
+                String name = fields[counter].getName();
+                Log.e("COUNTER", String.valueOf(counter));
                 Log.e("rawId", String.valueOf(rawId));
                 mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                     @Override
@@ -112,7 +117,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.UserViewHolder
                     }
                 });
                 nameView.setText(name);
-                counter++;
+
 
         }
 

@@ -11,20 +11,18 @@
         android:id="@+id/fav"
         android:layout_width="47dp"
         android:layout_height="43dp"
-        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/btn_star" />
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="286dp"
+        android:layout_height="82dp"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toStartOf="@+id/play"
-        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,8 +30,6 @@
         android:id="@+id/play"
         android:layout_width="45dp"
         android:layout_height="43dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="28dp"
         app:layout_constraintEnd_toStartOf="@+id/fav"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_media_play" />
